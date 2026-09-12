@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #120c0a;
+  --foreground: #fffaf5;
+  --brand-red: #e0181f;
+  --brand-red-dark: #a8121a;
+  --brand-orange: #f4791f;
+  --brand-cream: #fffaf5;
+  --brand-black: #1a1210;
+  --surface: #1f1512;
+  --surface-muted: #2a1c17;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-dark: var(--brand-red-dark);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-black: var(--brand-black);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  background: #000;
+  color: var(--foreground);
+}
+
+/* Fixed 1920x1080 design surface. SignageStage sets a translate()+scale()
+   transform (computed in JS) to fit and center this on whatever window/TV
+   it's actually shown on, so every component below can be built against
+   exact 1920x1080 pixel math. */
+.signage-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  transform-origin: top left;
+  background: var(--background);
+  overflow: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
+}
