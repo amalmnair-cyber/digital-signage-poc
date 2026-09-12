@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { listSectionFiles } from "@/lib/dropbox/client";
+import { isDropboxConfigured, listSectionFiles } from "@/lib/dropbox/client";
+import { buildDemoContent } from "@/lib/signage/demoContent";
 import { SECTION_IDS, isSafePathSegment, type SignageContent, type SignageSection } from "@/types/signage";
 
 // The whole point is checking Dropbox for changes — this must never be
@@ -14,6 +15,12 @@ export async function GET(
 
   if (!isSafePathSegment(store) || !isSafePathSegment(screen)) {
     return NextResponse.json({ error: "Invalid store/screen" }, { status: 400 });
+  }
+
+  // No credentials configured (e.g. the public demo deployment): serve the
+  // bundled demo board rather than a 502 the visitor can do nothing about.
+  if (!isDropboxConfigured()) {
+    return NextResponse.json(buildDemoContent(store, screen));
   }
 
   let files;

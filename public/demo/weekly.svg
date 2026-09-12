@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="1080" viewBox="0 0 480 1080" role="img" aria-label="Northline Coffee weekly feature panel">
+  <defs>
+    <style>
+      .k  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1B1206; }
+      .eyb{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #A8541A; font-size: 24px; font-weight: 700; letter-spacing: 7px; }
+      .nm { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #1B1206; font-size: 58px; font-weight: 700; letter-spacing: -1px; }
+      .body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #5A4632; font-size: 23px; }
+      .ft { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #8A7355; font-size: 19px; letter-spacing: 4px; }
+    </style>
+  </defs>
+  <rect width="480" height="1080" fill="#F2E7D6"/>
+  <rect x="0" y="0" width="480" height="10" fill="#A8541A"/>
+
+  <text class="eyb" x="48" y="118">THIS WEEK</text>
+  <line x1="48" y1="150" x2="432" y2="150" stroke="#D8C4A8" stroke-width="2"/>
+
+  <text class="nm" x="48" y="300">Honey</text>
+  <text class="nm" x="48" y="368">Cardamom</text>
+  <text class="nm" x="48" y="436">Latte</text>
+
+  <text class="body" x="48" y="520">Local honey, green</text>
+  <text class="body" x="48" y="556">cardamom and a</text>
+  <text class="body" x="48" y="592">double of the Northline</text>
+  <text class="body" x="48" y="628">house blend.</text>
+
+  <text class="k" x="48" y="790" font-size="86" font-weight="300">4.10</text>
+  <text class="eyb" x="48" y="846" font-size="20" letter-spacing="5">HOT OR ICED</text>
+
+  <line x1="48" y1="960" x2="432" y2="960" stroke="#D8C4A8" stroke-width="2"/>
+  <text class="ft" x="48" y="1004">NORTHLINE COFFEE</text>
+</svg>

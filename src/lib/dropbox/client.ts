@@ -10,6 +10,15 @@ import "server-only";
 const SIGNAGE_ROOT = process.env.DROPBOX_SIGNAGE_ROOT ?? "/Website Project trail/Digital Signage";
 const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg"] as const;
 
+/**
+ * Whether a Dropbox token is present at all. Lets callers fall back to the
+ * bundled demo board instead of surfacing a 502 to a visitor who was never
+ * going to have this deployment's credentials.
+ */
+export function isDropboxConfigured(): boolean {
+  return Boolean(process.env.DROPBOX_ACCESS_TOKEN);
+}
+
 function getAccessToken(): string {
   const token = process.env.DROPBOX_ACCESS_TOKEN;
   if (!token) {

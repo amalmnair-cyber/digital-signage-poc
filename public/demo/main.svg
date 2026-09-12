@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-label="Northline Coffee main menu board">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17120F"/>
+      <stop offset="100%" stop-color="#0D0A08"/>
+    </linearGradient>
+    <style>
+      .h  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #F4ECE1; }
+      .lbl{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #D9913F; font-size: 30px; font-weight: 700; letter-spacing: 6px; }
+      .itm{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #F4ECE1; font-size: 42px; font-weight: 500; }
+      .sub{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #9A8B7C; font-size: 22px; font-weight: 400; }
+      .prc{ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #F4ECE1; font-size: 42px; font-weight: 300; }
+      .rule { stroke: #33291F; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1440" height="1080" fill="url(#bg)"/>
+
+  <text class="h" x="100" y="150" font-size="82" font-weight="700" letter-spacing="-1">NORTHLINE</text>
+  <text class="sub" x="104" y="196" letter-spacing="9">COFFEE · ROASTED IN LEEDS</text>
+  <line class="rule" x1="100" y1="232" x2="1340" y2="232"/>
+
+  <text class="lbl" x="100" y="292">ESPRESSO</text>
+  <text class="itm" x="100" y="358">Flat White</text><text class="prc" x="1340" y="358" text-anchor="end">3.40</text>
+  <text class="itm" x="100" y="423">Cortado</text><text class="prc" x="1340" y="423" text-anchor="end">3.10</text>
+  <text class="itm" x="100" y="488">Latte / Cappuccino</text><text class="prc" x="1340" y="488" text-anchor="end">3.60</text>
+  <text class="itm" x="100" y="553">Doppio</text><text class="prc" x="1340" y="553" text-anchor="end">2.80</text>
+  <line class="rule" x1="100" y1="592" x2="1340" y2="592"/>
+
+  <text class="lbl" x="100" y="648">FILTER</text>
+  <text class="itm" x="100" y="712">Batch Brew</text><text class="prc" x="1340" y="712" text-anchor="end">2.60</text>
+  <text class="itm" x="100" y="777">V60 · Single Origin</text><text class="prc" x="1340" y="777" text-anchor="end">4.20</text>
+  <line class="rule" x1="100" y1="816" x2="1340" y2="816"/>
+
+  <text class="lbl" x="100" y="872">KITCHEN</text>
+  <text class="itm" x="100" y="936">Cardamom Bun</text><text class="prc" x="1340" y="936" text-anchor="end">3.20</text>
+  <text class="itm" x="100" y="1001">Sourdough · Eggs · Chilli Butter</text><text class="prc" x="1340" y="1001" text-anchor="end">7.50</text>
+</svg>
